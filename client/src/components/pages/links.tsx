@@ -24,7 +24,7 @@ const Links = () => {
 		<>
 			<form onSubmit={handleSubmit(onSubmitdata)} noValidate>
 				<div className="container mx-auto px-4 md:px-0">
-					<div className="flex flex-col gap-6 bg-white p-8 md:p-12">
+					<div className="flex flex-col gap-6  p-8 md:p-12">
 						<Label className="text-4xl font-semibold" htmlFor="url">
 							Create New
 						</Label>

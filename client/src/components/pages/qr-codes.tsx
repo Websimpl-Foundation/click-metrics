@@ -14,7 +14,7 @@ const QrCodes = ({ url }: { url: string }) => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+        <div className="flex flex-col items-center justify-center min-h-screen ">
             <div className="p-4 bg-white rounded-lg shadow-lg">
                 <QRCode id="qrCode" value={url} size={256} className="rounded-md" />
                 <button 

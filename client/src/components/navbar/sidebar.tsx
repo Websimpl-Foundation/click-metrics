@@ -18,7 +18,7 @@ const Sidebar = () => {
       >
         <button
           onClick={toggleSidebar}
-          className="absolute top-4 right-[-2rem] z-50 bg-white text-black px-3 py-2 mr-4 rounded-full h-auto shadow-md"
+          className="absolute top-4 right-[-2rem] z-50  text-black px-3 py-2 mr-4 rounded-full h-auto shadow-md"
         >
           {isSidebarVisible ? (
             <i className="fa-solid fa-xmark"></i>
@@ -28,7 +28,7 @@ const Sidebar = () => {
         </button>
 
         {isSidebarVisible && (
-          <div className="border-r-[1.5px] border-[#dbe0eb] min-w-[18rem] px-4 sticky top-0 left-0 h-full bg-white">
+          <div className="border-r-[1.5px] border-[#dbe0eb] min-w-[18rem] px-4 sticky top-0 left-0 h-full ">
             <div className="w-full flex justify-center my-6">
               <span className="text-2xl font-bold text-[#0c3ebb]">
                 <a href="/">
@@ -47,7 +47,7 @@ const Sidebar = () => {
                 className={({ isActive }) =>
                   `px-4 py-3 rounded-md text-sm font-medium flex items-center gap-2 ${
                     isActive
-                      ? "text-[#0c3ebb] bg-[#d7e0f9] hover:bg-[#f4f6fa] border-l-4 border-[#0c3ebb]"
+                      ? "text-[#0c3ebb] hover:bg-[#f4f6fa] border-l-4 border-[#0c3ebb]"
                       : "text-gray-600 hover:bg-blue-50 hover:text-blue-600"
                   }`
                 }
