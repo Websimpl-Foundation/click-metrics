@@ -1,9 +1,22 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Template from "./components/navbar/template"
+import Template from "./components/navbar/template";
 import Theme from "./components/pages/theme";
-import { Home, Links, QrCodes, LinkInBio, Analytics, Campaigns, CustomLinks, Settings, Help, NotFoundPage } from "./components/pages/index"
+import {
+  Home,
+  Links,
+  QrCodes,
+  LinkInBio,
+  Analytics,
+  Campaigns,
+  CustomLinks,
+  Settings,
+  Help,
+  NotFoundPage,
+  Signin,
+  Signup,
+} from "./components/pages/index";
 import Loader from "./components/ui/Loader";
 
 function App() {
@@ -20,7 +33,9 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Template />} >
+        <Route path="/" element={<Template />}>
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/signup" element={<Signup />} />
           <Route path="/" element={<Home />} />
           <Route path="/links" element={<Links />} />
           <Route path="/qr" element={<QrCodes/>} />
@@ -34,7 +49,6 @@ function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
-
     </>
   );
 }
