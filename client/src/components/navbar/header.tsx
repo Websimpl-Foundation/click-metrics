@@ -5,7 +5,6 @@ import ProfileDropdown from "./profile-dropdown";
 
 const Header = () => {
   const [dropDownIsActive, setDropdownIsActive] = useState<boolean>(false);
-
   const closeProfileDropdown = () => {
     setDropdownIsActive(false);
   };
