@@ -1,8 +1,16 @@
+require('dotenv').config();
 const express = require("express");
 const { connectToMongoDB } = require("./connect");
 const urlRoute = require("./src/routes/url");
 const URL = require("./src/models/url");
 const cors = require("cors");
+
+const firebaseAdmin = require("./src/Firebase/firebase"); // Import Firebase Admin SDK
+const { getAuth } = require("firebase-admin/auth");
+
+
+
+
 
 const app = express();
 const PORT = 8001;
@@ -35,5 +43,11 @@ app.get("/:shortId", async (req, res) => {
     res.status(404).json({ error: "URL not found" });
   }
 });
+
+
+//authetication code
+const router=require("./src/routes/auth-router")
+
+app.use("/api/auth",router)
 
 app.listen(PORT, () => console.log(`Server started at PORT: ${PORT}`));
