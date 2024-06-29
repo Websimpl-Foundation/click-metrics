@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Campaigns = () => {
   return (
-    <div className="bg-[#fff] w-full h-full">
+    <div className="bg-[#fff] w-full h-full dark:bg-[#0D203D] dark:text-white">
         <div className="flex flex-col items-center justify-center mt-14 mb-10">
             <img src="https://app.bitly.com/s/bbt2/images/campaigns-empty-state.png" className="w-1/3" />
         </div>

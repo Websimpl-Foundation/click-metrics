@@ -27,7 +27,7 @@ const ProfileDropdown = () => {
 
     return (
         <>
-            <div className='absolute right-0 top-full w-64 flex gap-4 flex-col justify-around py-6 px-8 bg-white border-2 border-gray-300 shadow-md rounded-md cursor-default'>
+            <div className='absolute right-0 top-full w-64 flex gap-4 flex-col justify-around py-6 px-8 bg-white border-2 border-gray-300 shadow-md rounded-md cursor-default dark:bg-[#0D203D] dark:text-white'>
                 <div className='flex flex-col h-42 gap-4 items-center'>
                     <Avatar>
                         {/* <AvatarImage src="https://github.com/shadcn.png" /> */}

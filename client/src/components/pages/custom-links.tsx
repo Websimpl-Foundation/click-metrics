@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const CustomLinks = () => {
     return (
-        <div className="bg-white h-full flex flex-col items-center w-3/5 mx-auto">
+        <div className="bg-white h-full flex flex-col items-center w-3/5 mx-auto dark:bg-[#0D203D] dark:text-white">
             <div className="flex flex-col mt-14 mb-10 w-fit">
                 <h1 className="text-3xl font-bold mb-3 flex">
                     Brand your links with a custom domain

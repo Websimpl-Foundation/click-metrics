@@ -83,7 +83,7 @@ const Qrcode: React.FC = () => {
 
   return (
     <>
-      <div className="mx-auto p-4 w-[95%]">
+      <div className="mx-auto p-4 w-[95%] dark:bg-[#0D203D] dark:text-white">
         <h1 className="text-3xl font-bold mb-4">QR CODE GENERATOR</h1>
         <p className="text-zinc-600 dark:text-zinc-400 mb-4">
           Generate a customized QR code by entering your website, text, or any

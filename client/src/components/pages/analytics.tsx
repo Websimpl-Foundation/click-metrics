@@ -8,7 +8,7 @@ import { Button } from "../ui";
 import LocationCard from "../charts/location_card";
 const Analytics = () => {
   return (
-    <div className="-ml-2">
+    <div className="-ml-2 dark:bg-[#0A192F] dark:text-white">
       <div className="bg-[#f4f6fa] ">
         <div className="flex justify-between items-center">
           <h1 className="text-3xl font-bold p-2 ml-3 mb-3">Analytics</h1>
